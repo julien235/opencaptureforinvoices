@@ -28,7 +28,7 @@ VER=$(lsb_release -r)
 defaultPath=/var/www/html/opencaptureforinvoices/
 imageMagickPolicyFile=/etc/ImageMagick-6/policy.xml
 docserverPath=/var/docservers/
-user=$(who am i | awk '{print $1}')
+user=$(whoami | awk '{print $1}')
 group=www-data
 
 if [ -z "$user" ]; then
